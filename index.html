@@ -5,26 +5,94 @@
         <link rel="stylesheet" type="text/css" href="style.css": id="page_style"></link>
     </head>
     <body>
-        <div>
-            <ul class="nav-bar">
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a class="active" href="index.html">HOME</a></li>
-                <li id="name"><a href="index.html">NICHOLAS NGUYEN</a></li>
-            </ul>
-        </div>
-
-        <div style="margin-right:-20px;margin-left:-20px;">
-            <div style="width:100%;background-color:lightgray;text-align: center;">
-                <br>
-                pp
-                <div style="width:75%;background-color:lightgray;margin:0 auto;text-align:left;">
-                    <h2>Hello, I am</h2>
-                    <h1>Nicholas Nguyen</h1>
-                    <p>I am a computer science student at Texas A&M University.</p>
+        <nav>
+            <a id="name" href="/">NICHOLAS NGUYEN</a>
+            <ul>
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a class="active" href="#">HOME</a></li>
+                    <li><a href="#about-me">ABOUT ME</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#resume">RESUME</a></li>
+                    <li><a href="#contact-me">CONTACT ME</a></li>
                 </div>
-                <br>
-                <br>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <div class="page-content">
+                <h2>Hello, I am</h2>
+                <h1>Nicholas Nguyen</h1>
+                <p>I am a computer science student at Texas A&M University.</p>
             </div>
+        </div>
+        
+        <div class="page-content">
+            <h1 id="about-me">About Me</h1>
+            <p>
+                I am originally from St. Paul, Minnesota, but my family and I moved to Texas before I even turned one.
+                Since then, I have been living in Austin, Texas, up until moving to College Station for school.
+                I am currently a third-year student at Texas A&M University pursuing a Bachelor of Science in Computer Science degree.
+                My interest in computers has been a part of my life since I was a kid.
+                I am fascinated by multiple aspects of computers such as the actual computer parts, software, and video games.
+            </p>
+            <p>
+                I love constantly learning about new things and finding different ways to solve problems, which is another reason why I enjoy computer science and know it is the perfect path for me.
+                In both school and my free time, I realize that I feel most fulfilled with what I am doing when it requires me to really think and find solutions to any issues or puzzles I may come across.
+                My passion for learning and problem solving is fueled by the abundant amount of coding languages and challenging coding exercises available and taught by the university.
+            </p>
+            <p>
+                Although I have not completed many personal projects, I plan on completing many of them in the near future in addition to learning several more languages.
+                Doing so will allow me to gain experience and pursue my goal as a software programmer.
+                I dream of a future as a software programmer because the idea of using code to create amazing things, solve difficult problems, and more to make a huge positive impact on society excites me.
+                I look forward to using my expertise in computer science to give back to my community on a large scale.
+                I want to help others feel the happiness and excitement I first felt when I experienced the work of software programmers when I was younger, whether they realize the true extent of what led to the final product or not.
+            </p>
+
+            <h1 id="experience">Experience</h1>
+            <p>
+                Centennial Arts
+            </p>
+            <p>
+                Accenture
+            </p>
+
+            <h1 id="projects">Projects</h1>
+            <p>
+                I created this website from scratch using HTML and used CSS to create the two different styles, but since I do not have many coding projects under my belt, I want to learn how to create video games and video game add-ons, like mods.
+                In addition to this, I want to complete projects that have an impact on people because doing things that help people makes me feel accomplished and feel like I'm making a difference.
+            </p>
+            <p>
+                A coding project that I have completed is a Discord Bot.
+                This bot takes in user commands and uses APIs to respond to the command.
+                One of these commands is called "lookup," and it uses the Google Search API to conduct a search on a user given query.
+                From this, it replies with the top 5 links corresponding with the query.
+                Another command that involves APIs is the "r" command.
+                This command uses the Reddit API to automatically get a post from the meme subreddit and sends it to the channel, but it can also take an optional input from the user that specifies the subreddit.
+            </p>
+            <p>
+                Another project I have completed is an automator for League of Legends.
+                This program allows the user to automatically acccept a match with the click of a button.
+                The user can also input a champion name to automatically select or ban a champion as well.
+                This program uses the PyAutoGUI API to detect images on the screen and
+            </p>
+            <p>
+                These projects can be found on GitHub.
+                My professional profile is hosted on LinkedIn and can be found here.
+            </p>
+
+            <h1 id="resume">Resume</h1>
+            <p>
+                Image/embedded resume
+            </p>
+            <p>
+                Link to download resume.
+            </p>
+
+            <h1 id="contact-me">Contact Me</h1>
+            <p>Contact form</p>            
         </div>
         
         <script src="functions.js"></script>
