@@ -1,17 +1,21 @@
 * {box-sizing: border-box;}
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'opensans-bold', sans-serif;
     margin: 0;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 111px;
-    
+    scroll-padding-top: 100px;
+}
+
+h1 {
+    padding: 20px 0px 10px 0px;
 }
 
 nav {
+    font-size: 14px;
     padding: 20px;
     overflow: hidden;
     background-color: #ffffff;
@@ -34,9 +38,12 @@ nav a:hover {
     color: black;
 }
 
-.menu {
+.active {
+    font-weight: bold;
+}
+
+#menu {
     display: flex;
-    gap: 1em;
     list-style: none;
 }
 
@@ -56,18 +63,39 @@ input[type=checkbox] {
     background-color: lightgray;
     text-align: center;
     padding: 50px 0;
+    height: 500px;
+}
+
+#banner-name {
+    font-size: xxx-large;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
 }
 
 .page-content {
-    width:75%;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
 }
 
-@media (max-width: 894px) {
-    .menu {
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+@media (max-width: 890px) {
+    #menu {
         position: fixed;
-        top: 67px;
+        top: 49px;
         display: block;
         background-color:#f5f5f5;
         text-align: center;
@@ -81,12 +109,11 @@ input[type=checkbox] {
         transition: 0.4s ease;
     }
 
-
-    .menu li + li {
+    #menu li + li {
        margin-top: 20px;
     }
 
-    input[type=checkbox]:checked ~ .menu {
+    input[type=checkbox]:checked ~ #menu {
        max-height: 250px;
        padding: 24px 0;
     }
