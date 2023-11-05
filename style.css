@@ -3,15 +3,26 @@
 body {
     font-family: 'opensans-bold', sans-serif;
     margin: 0;
+    line-height: 1.5;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 83px;
 }
 
 h1 {
-    padding: 20px 0px 10px 0px;
+    padding-top: 40px;
+    margin: 0;
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    margin: 10px 0 20px 0;
 }
 
 nav {
@@ -24,6 +35,7 @@ nav {
     top: 0;
     align-items: center;
     justify-content: space-between;
+    line-height: normal;
 }
 
 nav a {
@@ -63,7 +75,7 @@ input[type=checkbox] {
     background-color: lightgray;
     text-align: center;
     padding: 50px 0;
-    height: 500px;
+    height: 80vh;
 }
 
 #banner-name {
@@ -73,26 +85,116 @@ input[type=checkbox] {
 }
 
 .page-content {
-    width: 60%;
+    width: 700px;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 1.5rem;
 }
 
 .column {
     flex: 50%;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .row {
     display: flex;
 }
 
-img {
-    height: auto;
-    width: 100%;
+#about-me, #projects, #contact-me {
+    background-color: #f5f5f5;
 }
 
-@media (max-width: 890px) {
+#centennial-arts, #accenture {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+#centennial-arts:hover {
+    color: #b03434;
+}
+
+#accenture:hover {
+    color: #bd00ff;
+}
+
+img {
+    aspect-ratio: 1;
+    height: 12rem;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
+
+.img-text {
+    text-align:left;
+    padding: 10px;
+    margin: 0;
+}
+
+.logo {
+    border-radius: 0;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+
+form > * {
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+input[type=submit] {
+    transition: ease 0.5s;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+input[type=submit]:hover {
+    
+    background-color: lightgray;
+}
+
+#confirmation {
+    display: none;
+}
+
+@media (max-width: 300px) {
+    img {
+        width: 85%;
+        height: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    .flex-div {
+        display: block;
+    }
+
+    img {
+        float: none;
+        margin: 0;
+    }
+
+    #about-me > div > div > p {
+        padding-left: 0!important;
+    }
+
+    .page-content {
+        width: 80%;
+        text-align: center;
+    }
+
+    .img-text {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 888px) {
     #menu {
         position: fixed;
         top: 48px;

@@ -27,4 +27,19 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', highlight_nav_on_scroll);
   highlight_nav_on_scroll();
 });
+
+function submitForm() {
+  var confirmation = document.getElementById('confirmation');
+  var form = document.getElementById('contact-form');
+
+  form.style.display = 'none';
+  confirmation.style.display = 'block';
   
+  setTimeout(function () {
+    confirmation.style.display = 'none';
+  }, 3000);
+  setTimeout(function () {
+    form.reset();
+    form.style.display = 'block';
+  }, 3000);
+}
