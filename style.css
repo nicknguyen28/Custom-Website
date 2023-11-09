@@ -72,16 +72,22 @@ input[type=checkbox] {
 }
 
 .banner {
-    background-color: lightgray;
     text-align: center;
     padding: 50px 0;
     height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("resources/bali.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #banner-name {
     font-size: xxx-large;
     color: white;
-    text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+    padding: 0 0 100px 0;
 }
 
 .page-content {
