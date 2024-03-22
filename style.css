@@ -110,10 +110,14 @@ input[type=checkbox] {
     background-color: #f5f5f5;
 }
 
-#centennial-arts, #accenture {
+#dataannotation, #centennial-arts, #accenture {
     text-decoration: none;
     color: black;
     transition-duration: 0.4s;
+}
+
+#dataannotation:hover {
+    color: #3f42d8;
 }
 
 #centennial-arts:hover {
